@@ -44,7 +44,7 @@ func load(p string) {
 		}
 		i := strings.Index(s, "=")
 		commentIndex := strings.Index(s, "//")
-		if commentIndex <= 0 {
+		if commentIndex < 0 {
 			commentIndex = len(s)
 		}
 		if i > 0 {
@@ -92,7 +92,7 @@ func Int32(key string, def ...interface{}) int32 {
 		v, _ = def[0].(int32)
 		return v
 	}
-	tmp, _ := strconv.ParseInt(s, 10, 32) //10进制 64位
+	tmp, _ := strconv.ParseInt(s, 10, 32) //10进制 32位
 	return int32(tmp)
 }
 
@@ -103,7 +103,7 @@ func Int8(key string, def ...interface{}) int8 {
 		v, _ = def[0].(int8)
 		return v
 	}
-	tmp, _ := strconv.ParseInt(s, 10, 8) //10进制 64位
+	tmp, _ := strconv.ParseInt(s, 10, 8) //10进制 8位
 	return int8(tmp)
 }
 
