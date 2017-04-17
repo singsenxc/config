@@ -14,7 +14,7 @@ func main() {
 	config.SetPath("config.toml")//change config path
 	config.ReLoad() //reload config
 	config.String("foo")
-	config.Int64("bar")//just support int64
+	config.Int64("bar")//only support int64
 	config.String("user.name")
 }
 ```
