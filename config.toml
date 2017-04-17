@@ -1,0 +1,14 @@
+
+string = "string"
+int    = 22
+float  = 3.14159
+bool   = true
+time   = 1999-05-27T07:32:00Z
+array1 = ["a","b","c"]
+array2 = [1,2,3]
+
+[foo]
+a = "a"
+b = 3
+c = 2.5
+d = [1,2,3]
