@@ -7,7 +7,7 @@ Usage:
 package main
 
 import (
- "github.com/singsenxc/config"
+ "github.com/x-croz/config"
 )
 
 func main() {
