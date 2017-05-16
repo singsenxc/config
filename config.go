@@ -7,7 +7,7 @@ import (
 
 var c_path = "config.toml"
 
-var c *toml.TomlTree
+var c *toml.Tree
 
 func init() {
 	ReLoad()
